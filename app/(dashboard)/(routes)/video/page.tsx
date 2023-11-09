@@ -22,7 +22,7 @@ import { cn } from "@/lib/utils"
 import { UserAvatar } from "@/components/userAvatar"
 import { BotAvatar } from "@/components/botAvatar"
 import { useProModal } from "@/hooks/use-pro-modal"
-export default function videoPage() {
+export default function VideoPage() {
     const proModal = useProModal()
 
     const router = useRouter();

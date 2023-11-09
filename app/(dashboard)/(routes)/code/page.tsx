@@ -16,14 +16,13 @@ import { useRouter } from "next/navigation"
 import { useState } from "react"
 import ReactMarkDown from "react-markdown"
 import { ChatCompletionRequestMessage } from "openai"
-import { currentUser } from "@clerk/nextjs/app-beta"
 import Empty from "@/components/Empty"
 import Loader from "@/components/Loader"
 import { cn } from "@/lib/utils"
 import { UserAvatar } from "@/components/userAvatar"
 import { BotAvatar } from "@/components/botAvatar"
 import { useProModal } from "@/hooks/use-pro-modal"
-export default function codePage() {
+export default function CodePage() {
   const proModal = useProModal()
     const router = useRouter();
     const [messages,setMessages] = useState<ChatCompletionRequestMessage[]>([]);

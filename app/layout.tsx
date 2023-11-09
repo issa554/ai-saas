@@ -9,7 +9,7 @@ import { CrispProvider } from '@/components/crisp-provider'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'AI',
+  title: 'Genius',
   description: 'AI platform',
 }
 
@@ -19,6 +19,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
+    <>
     <ClerkProvider>
       <CrispProvider />
 
@@ -29,5 +30,6 @@ export default function RootLayout({
         </body>
     </html>
     </ClerkProvider>
+    </>
   )
 }
