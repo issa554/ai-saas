@@ -1,0 +1,1 @@
+export const FREE_REQ =5;
